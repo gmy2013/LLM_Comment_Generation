@@ -24,12 +24,12 @@ def read_data(file_address):
 
 def get_data():
     training_codes, training_comments, training_labels, test_codes, test_comments, test_labels = [], [], [], [], [], []
-    train_file_address = 'tlcodesum.test'
+    train_file_address = 'tlcodesum.train'
     cur_ids, cur_codes, cur_comments, cur_labels = read_data(train_file_address)
     training_codes += cur_codes
     training_comments += cur_comments
     training_labels += cur_labels
-    test_file_address = 'tlcodesum.train'
+    test_file_address = 'tlcodesum.test'
     cur_ids, cur_codes, cur_comments, cur_labels = read_data(test_file_address)
     test_codes += cur_codes
     test_comments += cur_comments
